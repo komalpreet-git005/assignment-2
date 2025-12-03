@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book Your Trip • VoyageVista</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Secure your reservation with our simple booking form." />
+</head>
+<body>
+  
+<header class="header">
+  <div class="container nav" role="navigation" aria-label="Main Navigation">
+    <div class="brand"><span class="logo" aria-hidden="true">✈</span>VoyageVista</div>
+    <nav class="menu">
+      <a href="index.html" >Home</a>
+      <a href="packages.html" >Packages</a>
+      <a href="booking.html" aria-current="page">Book Now</a>
+      <a href="gallery.html" >Gallery</a>
+      <a href="about.html" >About / Contact</a>
+    </nav>
+  </div>
+</header>
+
+  <main class="section">
+    <div class="container">
+      <h1>Booking Form</h1>
+      <p class="muted">Fill in your details and we'll get back with a confirmation and payment link.</p>
+      <form class="form" action="#" method="post">
+        <div class="grid-3">
+          <div>
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" placeholder="e.g., Priya Sharma" required />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
+          <div>
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" placeholder="+91 98765 43210" required />
+          </div>
+        </div>
+
+        <div class="grid-3" style="margin-top:10px;">
+          <div>
+            <label for="start">Start Date</label>
+            <input id="start" name="start" type="date" required />
+          </div>
+          <div>
+            <label for="end">End Date</label>
+            <input id="end" name="end" type="date" required />
+          </div>
+          <div>
+            <label for="travellers">Travellers</label>
+            <select id="travellers" name="travellers" required>
+              <option value="">Select</option>
+              <option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid-2" style="margin-top:10px;">
+          <div>
+            <label for="destination">Destination</label>
+            <select id="destination" name="destination" required>
+              <option value="">Choose a destination</option>
+              <option>Paris, France</option>
+              <option>Bali, Indonesia</option>
+              <option>Kyoto, Japan</option>
+              <option>Santorini, Greece</option>
+              <option>Dubai, UAE</option>
+              <option>Kerala, India</option>
+            </select>
+          </div>
+          <div>
+            <label for="package">Package</label>
+            <select id="package" name="package">
+              <option value="">Select a package</option>
+              <option>Romantic Paris Getaway</option>
+              <option>Bali Beach Retreat</option>
+              <option>Kyoto Culture Trail</option>
+              <option>Santorini Sun & Sea</option>
+              <option>Dubai Desert Escape</option>
+              <option>Kerala Backwaters</option>
+            </select>
+          </div>
+        </div>
+
+        <div style="margin-top:10px;">
+          <label for="notes">Additional Requests</label>
+          <textarea id="notes" name="notes" rows="4" placeholder="Hotel preferences, dietary needs, special occasions, etc."></textarea>
+        </div>
+
+        <div class="actions">
+          <button type="submit">Submit Booking</button>
+          <button type="reset" class="ghost">Reset</button>
+        </div>
+
+        <p class="notice">By submitting, you agree to our terms and privacy policy.</p>
+      </form>
+    </div>
+  </main>
+  
+<footer class="footer">
+  <div class="container">
+    <div class="grid-3">
+      <div>
+        <div class="brand"><span class="logo" aria-hidden="true">✈</span>VoyageVista</div>
+        <p class="muted">Crafting beautiful journeys since 2012.</p>
+        <p class="badge" aria-label="IATA Accredited">IATA • Trusted</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <p><a href="packages.html">Best Packages</a> · <a href="booking.html">Book</a> · <a href="gallery.html">Gallery</a></p>
+        <p><a href="about.html">About</a> · <a href="about.html#contact">Contact</a></p>
+      </div>
+      <div>
+        <h3>Follow</h3>
+        <div class="social">
+          <a href="#" aria-label="Facebook">Facebook</a>
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Twitter / X">Twitter</a>
+          <a href="#" aria-label="Website">Website</a>
+        </div>
+      </div>
+    </div>
+    <p class="muted" style="margin-top:12px;">© 2025 VoyageVista Travel Co. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
